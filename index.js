@@ -66,7 +66,21 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  /* If the cart does not contain a matching item, the function should print out That item is not in your cart. and return the unchanged cart*/
+  /* If the item is present in the cart, the function should remove the object from the cart and then return the updated cart  */
+  //function should loop through cart checking to see if item matches 
+  // an object key in cart. if it evaluates to true, remove item and 
+  //return new array.
+  //Otherwise, it should log "That item is not in your cart."
+  for (let i = 0; i < cart.length; i++) {
+    var object = cart[i];
+    var key = Object.keys(object)[0];
+    if (item == key) {
+      delete object.key;
+      return cart;
+    }
+    console.log("That item is not in your cart.")
+  }
 }
 
 function placeOrder(cardNumber) {
