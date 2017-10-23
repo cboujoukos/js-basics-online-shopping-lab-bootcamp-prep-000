@@ -74,8 +74,7 @@ function removeFromCart(item) {
   //Otherwise, it should log "That item is not in your cart."
   for (let i = 0; i < cart.length; i++) {
     var object = cart[i];
-    var key = Object.keys(object)[0];
-    var price = object[key];
+    var key = Object.keys(object)[0];var price = object[key];
     if (object.hasOwnProperty(item)) {
       cart.splice(i, 1);
       return cart;
