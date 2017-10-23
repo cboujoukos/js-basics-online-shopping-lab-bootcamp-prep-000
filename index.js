@@ -90,6 +90,6 @@ function placeOrder(cardNumber) {
     total();
     console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`);
     return cart.splice(0, cart.length)
-    /* Returns a list of items in the cart as it gets deleted: AKA a receipt! */  
+    /* Returns a list of items in the cart as it gets deleted: AKA a receipt! */
   }
 }
